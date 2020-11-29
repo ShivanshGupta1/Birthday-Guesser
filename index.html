@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body style="background-image: url(https://www.wallbg.com/wallpaper/1920x1200/2016/Abstract%20colorful%20design%20green%20major%20Wallpaper%2008.jpg);">
+    <form>
+        <h1 style="text-align: center;">The Birthday Guesser</h1>
+        <div class="form-group"  style="width: 350px; margin-left: 560px; margin-top: 300px;">
+          <label for="exampleInputEmail1">Birthday Month</label>
+          <input id="1" type="text" class="form-control" id="exampleInputEmail1" placeholder="Example-January" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group" style="width: 350px; margin-left: 560px;">
+          <label for="exampleInputPassword1">Birth Date</label>
+          <input id="2" placeholder="Example - 21" type="number" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button style="width: 350px; margin-left: 560px;" onclick="start(event)" type="submit" class="btn btn-primary">Submit</button>
+        <h6 style="text-align: center; width: 350px; margin-left: 560px; margin-top: 10px;"  id="a"></h6>
+        <h5 style="text-align: center; width: 350px; margin-left: 560px;" id="3"></h5>
+      </form>
+    </form>
+    <script>
+        function start(){
+            event.preventDefault()
+        let a = document.getElementById('1').value
+        let b = document.getElementById('2').value
+        let c = document.getElementById('a')
+        let d = document.getElementById('3')
+        b = parseInt(b)
+        if (a=='January') {
+            c.innerHTML=((((1*5+7)*4+13)*5)+b-205)
+        d.innerHTML='The last 2 digits will be The date and the remaining digits will be the Month.(Example, 501=1st May)'
+        }
+        if (a=='February'){
+            c.innerHTML=((((2*5+7)*4+13)*5)+b-205)
+        d.innerHTML='The last 2 digits will be The date and the remaining digits will be the Month.(Example, 501=1st May)'
+        }
+        if (a=='March'){
+            c.innerHTML=((((3*5+7)*4+13)*5)+b-205)
+        d.innerHTML='The last 2 digits will be The date and the remaining digits will be the Month.(Example, 501=1st May)'
+        }
+        if (a=='April'){
+            c.innerHTML=((((4*5+7)*4+13)*5)+b-205)
+        d.innerHTML='The last 2 digits will be The date and the remaining digits will be the Month.(Example, 501=1st May)'
+        }
+        if (a=='May'){
+        c.innerHTML=((((5*5+7)*4+13)*5)+b-205)
+        d.innerHTML='The last 2 digits will be The date and the remaining digits will be the Month.(Example, 501=1st May)'
+        }
+        if (a=='June'){
+            c.innerHTML=((((6*5+7)*4+13)*5)+b-205)
+        d.innerHTML='The last 2 digits will be The date and the remaining digits will be the Month.(Example, 501=1st May)'
+        }
+        if (a=='July'){
+            c.innerHTML=((((7*5+7)*4+13)*5)+b-205)
+        d.innerHTML='The last 2 digits will be The date and the remaining digits will be the Month.(Example, 501=1st May)'
+        }
+        if (a=='August'){
+            c.innerHTML=((((8*5+7)*4+13)*5)+b-205)
+        d.innerHTML='The last 2 digits will be The date and the remaining digits will be the Month.(Example, 501=1st May)'
+        }
+        if (a=='September'){
+            c.innerHTML=((((9*5+7)*4+13)*5)+b-205)
+        d.innerHTML='The last 2 digits will be The date and the remaining digits will be the Month.(Example, 501=1st May)'
+        }
+        if (a=='October'){
+            c.innerHTML=((((10*5+7)*4+13)*5)+b-205)
+        d.innerHTML='The last 2 digits will be The date and the remaining digits will be the Month.(Example, 501=1st May)'
+        }
+        if (a=='November'){
+            c.innerHTML=((((11*5+7)*4+13)*5)+b-205)
+        d.innerHTML='The last 2 digits will be The date and the remaining digits will be the Month.(Example, 501=1st May)'
+        }
+        else if (a=='December'){
+            c.innerHTML=((((12*5+7)*4+13)*5)+b-205)
+        d.innerHTML='The last 2 digits will be The date and the remaining digits will be the Month.(Example, 501=1st May)'
+        }
+        }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
